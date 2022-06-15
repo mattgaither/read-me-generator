@@ -3,7 +3,6 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // Linking page where the README is generated
-const generatePage = require("./Develop/utils/generateMarkdown");
 const generateMarkdown = require('./Develop/utils/generateMarkdown');
 
 // An array of question for the user to answer
@@ -19,16 +18,16 @@ const questions = [
     },{
         type: 'input',
         message: 'What is the process to install the application?',
-        name: 'title'
+        name: 'install'
     },{
         type: 'input',
         message: 'What does this application do?',
         name: 'usage'
     },{
-        type: 'checkbox',
-        message: 'Select the license:',
-        choices: ['Apache', 'BSD', 'GNU GPLV2', 'GNU GPLV3', 'ISC', 'MIT', 'MPL'],
-        default: 'MIT'
+        type: 'list',
+        message: 'Select the license for this application:',
+        choices: ['None', 'MIT', 'Boost', 'Apache'],
+        name: 'license'
     },{
         type: 'input',
         message: 'Who contributed to this application?',
@@ -67,3 +66,4 @@ init().then(answers => {
     const genReadmeFile = generateMarkdown(answers)
     writeToFile('./README.md', genReadmeFile)
 });
+ 
