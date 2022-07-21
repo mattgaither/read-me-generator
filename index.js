@@ -64,6 +64,6 @@ function init() {
 // Call the init()
 init().then(answers => {
     const genReadmeFile = generateMarkdown(answers)
-    writeToFile('./README.md', genReadmeFile)
+    writeToFile('./Develop/README.md', genReadmeFile)
 });
  
