@@ -1,9 +1,9 @@
-# README-generator
+# Project
 
   ## Description
-  <img src = 'https://img.shields.io/badge/MIT-%20License-inactive'>
+  <img src = 'https://img.shields.io/badge/Apache-%20License-inactive'>
 
-  This application helps make a README file for new projects and divides up the readme into corrisponding sections.
+  placeholder
 
   ## Table of Contents
 
@@ -15,20 +15,20 @@
   - [Questions](#questions)
 
   ## Installation
-  Install inquirer with npm install
+  Npm install inquirer
 
   ## Usage
-  This application will generate a README in the Develop fold you can then copy into your new projects. 
+  Placeholder
 
   ## License
-  The license this application is covered under is: [MIT license](https://opensource.org/licenses/MIT)
+  The license this application is covered under is: [Apahce License](https://opensource.org/licenses/Apache-2.0)
   
 
   ## Contribution
-  Matt Gaither
+  Matt G.
 
   ## Tests
-  No tests
+  No test
 
   ## Questions
   For any further questions visit my GitHub:  <a href='github.com/mattgaither'>www.github.com/mattgaither</a>
